@@ -1,0 +1,7 @@
+# Derlenmiş dosyalar
+*.exe
+*.lib
+*.exp
+*.obj
+*.o
+# evodraw_final.png
