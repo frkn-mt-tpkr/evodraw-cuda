@@ -1,7 +1,36 @@
-# Derlenmiş dosyalar
+# Compiled binaries
 *.exe
 *.lib
 *.exp
 *.obj
 *.o
-# evodraw_final.png
+*.pdb
+*.ilk
+*.ncb
+*.sdf
+*.opensdf
+*.suo
+*.user
+
+# Build output
+build/
+bin/
+out/
+
+# IDE / Editor
+.vs/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS generated
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# CUDA specific
+*.cubin
+*.ptx
+*.fatbin
+*.gpu

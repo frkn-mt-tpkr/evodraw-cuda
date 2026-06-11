@@ -90,7 +90,7 @@ __global__ void restore_region_kernel(unsigned char* canvas, unsigned char* best
 int main() {
     srand((unsigned int)time(NULL));
     int w, h, c;
-    unsigned char *h_img = stbi_load("referans.png", &w, &h, &c, 3);
+    unsigned char *h_img = stbi_load("images/referans.png", &w, &h, &c, 3);
     if (!h_img) return 1;
 
     int img_size = w * h * 3;
@@ -191,7 +191,7 @@ int main() {
 
     unsigned char *h_final = (unsigned char*)malloc(img_size);
     CHECK(cudaMemcpy(h_final, d_best, img_size, cudaMemcpyDeviceToHost));
-    stbi_write_png("evodraw_final.png", w, h, 3, h_final, w * 3);
+    stbi_write_png("images/evodraw_final.png", w, h, 3, h_final, w * 3);
     printf("\nBitti!\n");
     return 0;
 }
