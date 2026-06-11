@@ -75,7 +75,3 @@ The output will be saved to `images/evodraw_final.png`.
 3. **Fitness Evaluation** — Regional SAD is calculated on the GPU using atomic operations, comparing only the affected bounding box region.
 4. **Selection** — If the new shape reduces error, it's kept. Otherwise, the region is restored from the best canvas (Regional Undo).
 5. **Annealing** — Over 500K iterations, shape sizes shrink and alpha decreases, moving from coarse to fine detail.
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
